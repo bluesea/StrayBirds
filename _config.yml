@@ -90,7 +90,7 @@ follow:
 #Links
 customLinks:
   - item:
-    - text: Victor jiang
+    - text: Victor Jiang
       url: http://victorjiang.github.io
     message: Friends
   - item:
@@ -105,7 +105,7 @@ customLinks:
 #comment config
 disqus:
   config: false
-  id: disqus_IIVjWAm2pb
+  id: disqus_bluesea
 
 
 #################################### global configure #######################################
@@ -118,7 +118,7 @@ highlighter: pygments
 title: 飞鸟集
 description: 人生到处知何似，应似飞鸿踏雪泥
 theme: kunka
-disqusname: disqus_IIVjWAm2pb
+disqusname: disqus_bluesea
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
 # those themes are all come from GitHub Pages Themes
