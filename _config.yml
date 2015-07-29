@@ -105,7 +105,7 @@ customLinks:
 #comment config
 disqus:
   config: false
-  id: disqus_bluesea
+  id: bluesea
 
 
 #################################### global configure #######################################
@@ -118,7 +118,7 @@ highlighter: pygments
 title: 飞鸟集
 description: 人生到处知何似，应似飞鸿踏雪泥
 theme: kunka
-disqusname: disqus_bluesea
+disqusname: bluesea
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
 # those themes are all come from GitHub Pages Themes
