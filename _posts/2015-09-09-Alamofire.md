@@ -2,7 +2,7 @@
 layout: post
 title: Alamofire 学习笔记
 comments: true
-category: 技术
+category: Swift
 ---
 						Alamofire 学习笔记
 
