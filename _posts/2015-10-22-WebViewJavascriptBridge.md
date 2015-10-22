@@ -64,9 +64,5 @@ connectWebViewJavascriptBridge(function(bridge) {
     bridge.send('Please respond to this', function responseCallback(responseData) {
         console.log("Javascript got its response", responseData)
     })
-<<<<<<< HEAD
 })
 ```
-=======
-})`
->>>>>>> origin/gh-pages
