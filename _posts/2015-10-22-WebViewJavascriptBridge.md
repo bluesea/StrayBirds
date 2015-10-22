@@ -44,7 +44,7 @@ WebViewJavascriptBridge–原生iOS 与 网页元素互相通信
   一般不需要iOS 开发人员来设置,因为是与web页交互,这个是exmple中的例子,web开发导入或设置响应的js就可以了
 
 //js方法
-`function connectWebViewJavascriptBridge(callback) {
+```function connectWebViewJavascriptBridge(callback) {
     if (window.WebViewJavascriptBridge) {
         callback(WebViewJavascriptBridge)
     } else {
@@ -53,7 +53,6 @@ WebViewJavascriptBridge–原生iOS 与 网页元素互相通信
         }, false)
     }
 }
-
 connectWebViewJavascriptBridge(function(bridge) {
     bridge.init(function(message, responseCallback) {
         alert('Received message: ' + message)   
@@ -65,4 +64,5 @@ connectWebViewJavascriptBridge(function(bridge) {
     bridge.send('Please respond to this', function responseCallback(responseData) {
         console.log("Javascript got its response", responseData)
     })
-})`
+})
+```
