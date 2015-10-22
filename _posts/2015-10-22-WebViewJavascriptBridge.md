@@ -13,7 +13,7 @@ WebViewJavascriptBridge–原生iOS 与 网页元素互相通信
 
 项目地址:[WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge)
 
-最新示例：[点击下载](http://)
+最新示例：[点击下载](https://codeload.github.com/bluesea/WebViewJavascriptBridge-test/zip/master)
 
 
 
@@ -30,7 +30,15 @@ WebViewJavascriptBridge–原生iOS 与 网页元素互相通信
 }];`
 
 * js调用App内方法
- 通过registerHandler实现，一个响应事件只需要初始化一次即可
+	js通过oc中registerHandler注册回调，在js中通过bridge.callHandler来触发oc中的回调；
+	
+	` [_bridge registerHandler:@“相应web页上某个点击事件的方法名称,该名称需和web端人员制定" handler:^(id data, WVJBResponseCallbackresponseCallback) {
+      NSLog(@"这个方法 called: %@", data);
+    //data 是web页给你传递的数据,可以为空,根据需求制定
+    //responseCallback是你响应该事件后返回给web页的数据,可以不返回
+        例如: responseCallback
+(@{@"result":[NSNumber numberWithInt:1]});   
+}];`
 
 * OC发送消息给js
   
@@ -42,9 +50,9 @@ WebViewJavascriptBridge–原生iOS 与 网页元素互相通信
 
 * 最后设置javascript端
   一般不需要iOS 开发人员来设置,因为是与web页交互,这个是exmple中的例子,web开发导入或设置响应的js就可以了
-
-//js方法
-```function connectWebViewJavascriptBridge(callback) {
+	
+	```//js方法 
+	function connectWebViewJavascriptBridge(callback) {
     if (window.WebViewJavascriptBridge) {
         callback(WebViewJavascriptBridge)
     } else {
