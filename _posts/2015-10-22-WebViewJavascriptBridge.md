@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Alamofire 学习笔记
+title: WebViewJavascriptBridge–原生iOS 与 网页元素互相通信
 comments: true
-category: Swift
+category: 技术
 ---
 
 WebViewJavascriptBridge–原生iOS 与 网页元素互相通信
