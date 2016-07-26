@@ -1,3 +1,9 @@
+---
+layout: post
+title: react-native 笔记2
+comments: true
+category: React Native
+---
 # React Native 笔记2
 
 ## 1 TextInput
@@ -29,6 +35,7 @@ width和height采用Dimensions方式获取，不可写死
 
 ## 组件的生命周期
 ![image](../images/live.png)
+
 
 
 
